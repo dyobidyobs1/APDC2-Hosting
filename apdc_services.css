@@ -1,0 +1,685 @@
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+padding: 0px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+overflow: hidden;
+background-color: #FAF7F0;
+opacity: .95;
+position: fixed;
+width: 100%;
+height: auto;
+padding: 0px;
+top: 0;
+font-weight: 500;
+display:flex;
+align-items: center;
+justify-content:space-between;
+z-index:1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+display: block;
+color: #181818;
+text-align: center;
+padding: 5px 20px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.hover-underline-animation {
+display: inline-block;
+position: relative;
+color: #01184A;
+}
+
+.hover-underline-animation:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: 0;
+left: 0;
+background-color: #01184A;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+color: #01184A;
+font-weight: 700;
+border-bottom: 3px solid #01184A;
+}
+
+.topnav stick{
+position: fixed;
+}
+
+/* Logo Location*/
+.topnav img{
+width:200px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+/* Center the navbar*/
+nav ul{
+text-align: center;
+}
+nav ul li{
+display: inline-block;
+}
+
+nav ul li:last-child a{
+margin:0 0;
+}
+
+#forheader{
+z-index:2;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+font-size: 70px;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+
+}
+.content {
+padding: 50px 0px;
+}
+
+/* Slideshow*/
+.mySlides {
+display:none;
+}
+
+/* 2nd Content*/
+.content2 {
+background:#FAF7F0;
+padding: 170px 400px;
+text-align: center;
+color: white;
+font-family: Trebuchet MS;
+float: center;
+}
+
+.content2 h2{
+font-size: 40px;
+color: white;
+}
+
+.content2 p{
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+padding: 5px;
+}
+
+.button2 {
+background-color: #01184A;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 19px;
+margin: 4px 2px;
+cursor: pointer;
+margin-top: 50px;
+}
+
+.button2:hover{
+transform: scale(1.1);
+
+}
+
+.homeimg2 {
+max-width: 400px;
+float:right;
+padding: 10px;
+}
+
+/* Content 3*/
+.content3 {
+background: #FAF7F0;
+text-align: left;
+font-size: 20px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+}
+.container {
+font-family: Trebuchet MS;
+position: relative;
+text-align: center;
+color: white;
+}
+.geeks {
+overflow: hidden;
+margin: 0 auto;
+}
+
+.geeks img {
+width: 100%;
+transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+transform: scale(1.1);
+}
+.centered {
+position: absolute;
+top: 80%;
+left: 50%;
+font-family: 'Montserrat', sans-serif;
+transform: translate(-50%, -50%);
+text-align: center;
+font-size: 30px;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+}
+.centered2 {
+position: absolute;
+top: 27%;
+left: 50%;
+font-family: 'Montserrat', sans-serif;
+transform: translate(-50%, -50%);
+text-align: CENTER;
+font-size: 50px;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+}
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+transition: transform 2s, filter 1.5s ease-in-out;
+transform-origin: center center;
+filter: brightness(50%);
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover img {
+filter: brightness(100%);
+transform: scale(1.3);
+}
+
+.img-hover-zoom {
+height: 300px; /* Modify this according to your need */
+overflow: hidden; /* Removing this will break the effects */
+}
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+transition: transform .5s, filter 1.5s ease-in-out;
+filter: grayscale(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+filter: grayscale(0);
+transform: scale(1.1);
+}
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 20%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.homeimg3 {
+max-width: 500px;
+float: left;
+padding: 20px;
+}
+
+.content3 p{
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.image {
+flex-basis: 40%
+}
+
+.text {
+font-size: 20px;
+padding-left: 50px;
+}
+
+.button3 {
+background-color: #01184A;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+
+margin: 4px 2px;
+cursor: pointer;
+font-weight:bold;
+}
+.button3:hover{
+transform: scale(1.1);
+}
+
+/* Content 4*/
+.content4 {
+background-color: #FAF7F0;
+padding: 100px 400px;
+text-align: center;
+font-size: 20px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center
+}
+.content4 h2{
+font-size: 40px;
+color: BLACK;
+padding-left: 100px;
+}
+
+.content4 p{
+font-size: 20px;
+color: black;
+padding-left: 100px;
+}
+.homeimg4 {
+width: 430px;
+float: left;
+}
+
+.parallax1 {
+/* The image used */
+background-image: url("apdc1.jpg");
+
+/* Full height */
+height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Content 5*/
+.content5 {
+background-color: white;
+padding: 80px 400px 5px;
+text-align: center;
+font-size: 20px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center
+}
+
+.homeimg5 {
+max-width: 850px;
+float: right;
+padding: 20px;
+}
+
+.content5 p{
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+padding: 5px;
+}
+
+.image {
+flex-basis: 40%
+}
+
+.text {
+font-size: 20px;
+padding-right: 15px;
+}
+
+.button5 {
+background-color: #B06500;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 25px;
+font-weight:bold;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+bottom: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-height:800px){
+footer { position: static; }
+}
+
+.footer-distributed{
+background-color: #011031;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+padding: 60px 50px 60px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+/* Footer links */
+.footer-distributed .footer-links{
+color:  #ffffff;
+margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footer-distributed .footer-center p a{
+color: white;
+text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  #92999f;
+font-size: 13px;
+font-family: 'Montserrat', sans-serif;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 20px;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+
+}
+
+
+.styled-table {
+border-collapse: collapse;
+margin: 25px 0;
+font-size: .8em;
+min-width: 250px;
+margin:0 auto;
+background-color: #FAF7F0;
+overflow: hidden;
+font-family: 'Montserrat', sans-serif;
+}
+
+.styled-table thead tr {
+background-color: #FAF7F0;
+color: #000000;
+text-align: left;
+position: sticky;
+}
+
+.styled-table th{
+background-color: #FAF7F0;
+color: #000000;
+padding: 12px 15px;
+text-align: left;
+font-size: 18px;
+}
+
+.styled-table td {
+padding: 12px 15px;
+text-align: left;
+}
+
+.styled-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+background-color: #f4eddd ;
+}
+
+select{
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F7F7F7;
+  color: black;
+  font-family: Trebuchet MS;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 17px;
+  float: right;
+  background: #127BCB;
+  color: white;
+  font-size: 15px;
+  border: 1px solid #127BCB;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  padding: 7px 30px;
+  color:white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+input[type=submit]:hover{
+  color: black;
+  text-decoration: none;
+}
+
+#a2{
+float: left;
+background: #D24628;
+color: white;
+font-size: 15px;
+border: 1px solid #D24628;
+cursor: pointer;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+padding: 7px 30px;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+margin-right: 15px;
+margin-top: 5px;
+margin-bottom: 20px;
+}
+#a2:link {
+  text-decoration: none;
+  color: white;
+}
+#a2:visited {
+  text-decoration: none;
+  color: white;
+}
+#a2:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.containerz {
+  position: relative;
+  max-width: 500px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.containerz .contentz {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.content3 {
+  background-image: linear-gradient(to bottom right, #FAF7F0,#FAF7F0);
+  padding: 25px 250px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  font-family: Trebuchet MS;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  }
+  
+  .homeimg3 {
+  max-width: 700px;
+  float: left;
+  padding: 20px;
+  }
+  
+  .content3 p{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  }
+
+  
+.content4 {
+  background-image: linear-gradient(to bottom right, #FAF7F0,#FAF7F0);
+  padding: 25px 200px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  font-family: Trebuchet MS;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  

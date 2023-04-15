@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 0px;
+    background-color: #F1F4F9;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    }
+    
+    /* Add a black background color to the top navigation */
+    .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    top: 0;
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav stick{
+    position: fixed;
+    }
+    
+    /* Logo Location*/
+    .topnav img{
+    width:200px;
+    }
+    
+    .topnav span{
+    color: black;
+    padding-left: 20px;
+    font-size: 25px;
+    }
+    
+    /* Side Nav */
+    .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #29466A , #001034);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    }
+    
+    .sidenav a {
+    padding: 10px 10px 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+    color: #ffffff;
+    transform: scale(1.15);
+    }
+    
+    /*.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    }*/
+    
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    
+    .content2 {
+    padding: 60px 400px;
+    text-align: center;
+    font-family: Trebuchet MS;
+    float: left;
+    }
+    
+    .content3 {
+        padding: 130px 10px;
+        text-align: center;
+        font-family: Trebuchet MS;
+        float: left;
+        }
+        
+    .content2 h2{
+    font-size: 30px;
+    color: #01184A;
+    top: 70;
+    right: 100;
+    }
+    
+    
+    * {
+      box-sizing: border-box;
+    }
+    /* Float four columns side by side */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 5%;
+      }
+    
+      a { 
+        text-decoration: none; 
+        color:black;
+    }
+    a:hover{
+        font-weight: bold;
+    
+    }
+
+    input[type=text], input[type=number], select, input[type=date],input[type=time],textarea,input[type=password]{
+        width: 100%;
+        padding: 10px 17px;
+        margin: 0px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background: #F7F7F7;
+        color: black;
+        font-family: Trebuchet MS;
+      }
+
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        padding: 0px;
+        background-color: #F1F4F9;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        }
+        
+        /* Add a black background color to the top navigation */
+        .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        top: 0;
+        font-weight: 500;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 5px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        
+        .topnav stick{
+        position: fixed;
+        }
+        
+        /* Logo Location*/
+        .topnav img{
+        width:200px;
+        }
+        
+        .topnav span{
+        color: black;
+        padding-left: 20px;
+        font-size: 25px;
+        }
+        
+        /* Side Nav */
+        .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #29466A , #001034);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 100px;
+        }
+        
+        .sidenav a {
+        padding: 10px 10px 10px 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+        color: #ffffff;
+        transform: scale(1.15);
+        }
+        
+        
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+        
+        .content2 {
+        padding: 60px 400px;
+        text-align: center;
+        font-family: Trebuchet MS;
+        float: left;
+        }
+        
+        .content2 h2, #h2s{
+        font-size: 30px;
+        color: #01184A;
+        top: 70;
+        right: 100;
+        }
+        
+        .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 500px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin:0 auto;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        }
+        
+        .styled-table thead tr {
+        background-color: white;
+        color: #000000;
+        text-align: left;
+        position: sticky;
+        }
+        
+        .styled-table th{
+        background-color: white;
+        color: #000000;
+        padding: 10px 30px;
+        text-align: left;
+        font-size: 18px;
+        }
+        
+        .styled-table td {
+        padding: 10px 30px;
+        text-align: left;
+        }
+        
+        
+        input[type=search]{
+        width: 18%;
+        padding: 7px;
+        font-size: 15px;
+        border: 1px solid #4F4F4F;
+        float: right;
+        background: #E8E8E8;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 20px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-left:none;
+        }
+        
+        #a2{
+        float: left;
+        background: #127BCB;
+        color: white;
+        font-size: 15px;
+        border: 1px solid #127BCB;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 7px 30px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin-right: 15px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        }
+        #a2:link {
+          text-decoration: none;
+          color: white;
+        }
+        #a2:visited {
+          text-decoration: none;
+          color: white;
+        }
+        #a2:hover {
+          color: black;
+          text-decoration: none;
+        }
+        
+        .fixbar {
+        width: 100%;
+        height:50px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+        
+        a i {
+        transition: all 0.3s linear;
+        }
+        
+        a:hover i {
+        transform: scale(1.5);
+        }
+        
+        input[type=text], input[type=number], select, input[type=date],input[type=time],input[type=email],textarea{
+          width: 100%;
+          padding: 10px 17px;
+          margin: 0px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-sizing: border-box;
+          background: #F7F7F7;
+          color: black;
+          font-family: Trebuchet MS;
+        }
+        
+        input[type=submit] {
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+          font-weight: bold;
+          text-align: center;
+          font-family: Trebuchet MS;
+          font-size: 17px;
+          float: left;
+          background: #127BCB;
+          color: white;
+          font-size: 15px;
+          border: 1px solid #127BCB;
+          cursor: pointer;
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          padding: 7px 30px;
+          color:white;
+          border-radius: 10px 10px 10px 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          margin-right: 15px;
+          margin-top: 5px;
+          margin-bottom: 20px;
+        }
+        
+        input[type=submit]:hover{
+          color: black;
+          text-decoration: none;
+        }
+        

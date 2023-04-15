@@ -1,0 +1,106 @@
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+padding: 0px;
+background-color: #F1F4F9;
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+overflow: hidden;
+background-color: white;
+position: fixed;
+width: 100%;
+height: auto;
+padding: 10px 0;
+top: 0;
+font-weight: 500;
+display:flex;
+align-items: center;
+justify-content:space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+display: block;
+color: black;
+text-align: center;
+padding: 5px 20px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav stick{
+position: fixed;
+}
+
+/* Logo Location*/
+.topnav img{
+width:200px;
+}
+
+.topnav span{
+color: black;
+padding-left: 20px;
+font-size: 25px;
+}
+
+/* Side Nav */
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-image: linear-gradient(to bottom right, #29466A , #001034);
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 100px;
+}
+
+.sidenav a {
+padding: 10px 10px 10px 50px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #ffffff;
+transform: scale(1.15);
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 10px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.content2 {
+padding: 60px 350px;
+text-align: center;
+font-family: Trebuchet MS;
+float: left;
+}
+
+.content2 h2{
+font-size: 30px;
+color: #01184A;
+top: 70;
+right: 100;
+}

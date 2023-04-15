@@ -1,0 +1,45 @@
+INSTRUCTIONS
+
+1. Go to https://www.clickatell.com/
+2. Create an account and login.
+3. Navigate to 'My Workspace' and click 'SMS'
+4. Click 'Manage Test Phones' then add your mobile number.
+5. Go back to 'SMS' then click '+New SMS Setup'.
+6. How do you plan to use your new SMS channel? > Select 'API'.
+7. How do you plan to use your new SMS channel? > Select 'One-way'.
+8. Select API. > Select 'Basic HTTP API'.
+9. New or existing HTTP API. > Select 'Create a new HTTP API'.
+10. Fill in the Setup Name and Description.
+11. Message Type > Select 'One-way'
+12. SMS Service Class > Select 'STANDARD'
+13. Setup Type > Select 'Sandbox'
+14. Click 'Add Test Phones' and setup your test mobile number.
+15. Click 'Next'
+16. Save your API Key
+17. Copy 'ClickatellSMS.php' to your function folder.
+18. Include 'ClickatellSMS.php' to your web pages.
+
+    <?php
+        include "php/ClickatellSMS.php";
+    ?>
+
+19. There are 2 way to use ClickatellSMS.
+    
+    How to use: 
+        notifSMS('Your API Key', 'Recipient Number', 'Message Here')
+
+    A. Conditional
+
+        <?php 
+            if(notifSMS('h31-G9dlTi-LBWen05L24Q==', '639215663968', 'this is the content')){
+                echo "SMS successfully sent!";
+            }else{
+                echo "Something went wrong!";
+            }
+        ?>
+
+    B. Direct
+
+        <?php 
+            notifSMS('h31-G9dlTi-LBWen05L24Q==', '639215663968', 'this is the content');
+        ?>

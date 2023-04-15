@@ -1,0 +1,87 @@
+INSTRUCTIONS
+
+1. Copy 'vendor' folder to your htdocs(XAMPP) / www(UniServerX).
+2. Copy login.php and register.php to your function folder.
+3. Include the login.php and register.php to your PHP form file.
+
+    <?php
+        session_start();
+
+        /* Put your DB Conneciton here. Connection should be on top of the login.php and register.php */
+
+        include "php/login.php";
+        include "php/register.php";
+
+        /* This will restrict the user from accessing the login and register form if already logged in. */
+        if(isset($_SESSION['logged_status'])){
+            header('location: index.php');
+        }
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            
+        </body>
+    </html>
+
+4-A. To register an account. Use this HTML Class Indentifiers. 
+
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="bday">Date of Birth:</label>
+        <input type="date" id="bday" name="bday" required><br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="repassword">Confirm Password:</label>
+        <input type="password" id="repassword" name="repassword" required><br><br>
+
+        <input type="submit" name="register" value="Register">
+    </form>
+
+4-B. To login on your account, your email must be confirmed. The email confirmation will be sent and you just need to click the link.
+
+    <form method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+
+        <input type="submit" name="login" value="Login">
+    </form>
+
+5. If the login is successful, you'll be redirected to index.php
+6. On your login-protected pages, include this script to redirect the user to login form if not logged in.
+
+	<?php
+        session_start();
+
+        /* Put your DB Conneciton here. Connection should be on top of the login.php and register.php */
+
+        include "php/login.php";
+        include "php/register.php";
+
+        /* This will restrict the user from accessing the login-protected pages if not logged in. */
+        if(!isset($_SESSION['logged_status'])){
+            header('location: login.php');
+        }
+    ?>

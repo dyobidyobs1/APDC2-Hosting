@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("background.jpg");
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #FAF7F0;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  top: 0;
+  font-weight: 500;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  z-index:1;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+  float: right;
+  display: block;
+  color: #181818;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  }
+  
+  /* Change the color of links on hover */
+  .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #01184A;
+  }
+  
+  .hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #01184A;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  color: #01184A;
+  font-weight: 700;
+  border-bottom: 3px solid #01184A;
+  }
+  
+  .topnav stick{
+  position: fixed;
+  }
+  
+  /* Logo Location*/
+  .topnav img{
+  width:200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  }
+  
+  /* Center the navbar*/
+  nav ul{
+  text-align: center;
+  }
+  nav ul li{
+  display: inline-block;
+  }
+  
+  nav ul li:last-child a{
+  margin:0 0;
+  }
+  
+  #forheader{
+  z-index:2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;}
+
+.wrapper{
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #01184A;;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #01184A;;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h4{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 0;
+  margin-left: 10px;
+  text-align: center;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #01184A;;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #023095;
+}
+form .text h4{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h4 a{
+  color: #01184A;;
+  text-decoration: none;
+}
+form .text h4 a:hover{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #01184A;;
+  text-decoration: none;
+}
+
+input[type="date"]::before {
+	color: #999999;
+	content: attr(placeholder);
+}
+input[type="date"] {
+	color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+	color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}

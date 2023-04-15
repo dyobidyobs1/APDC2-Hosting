@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-size: cover;
+  margin: 100px;
+  background-image: url("background.jpg");
+
+}
+
+table, td{
+  border: 0px;
+  border-collapse: collapse;
+  padding:0px;
+  text-align: left;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 7px 0;
+  table-layout: fixed;
+  color: black;
+}
+
+#title{
+  text-align: center;
+  font-size: 30px;
+  color: #01184A;
+  padding-bottom: 10px;
+}
+
+th {
+  border: 0px;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  font-family: Trebuchet MS;
+  margin: 10px 0;
+  table-layout: fixed;
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: 1000;
+  position: relative;
+  color: black;
+}
+
+#container{
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, .100, 0.30);
+}
+
+input[type=text], input[type=number], select, input[type=date],textarea{
+  width: 100%;
+  padding: 10px 17px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F7F7F7;
+  color: black;
+  font-family: Trebuchet MS;
+}
+
+input[type=submit] {
+  width: 49%;
+  background-color: #002F6D;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 17px;
+  margin-top: 100px:
+  margin-bottom: 20px;
+}
+
+button{
+  width: 49%;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 2px solid #002F6D;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 17px;
+  color: black;
+}
+a {
+  text-decoration: none;
+  width: 49%;
+  background-color: white;
+  color: black;
+  padding: 10px 69px;
+  margin: 8px 0;
+  border: 2px solid #002F6D;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 17px;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: #002F6D;
+}
+a:visited {
+  text-decoration: none;
+  color:#002F6D;
+}
+a:hover {
+  color: #0059CF;
+  text-decoration: none;
+}
