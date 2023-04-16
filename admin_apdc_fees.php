@@ -96,8 +96,8 @@ if(!empty($result)){
     echo"<td>".$row['services'];
     echo"<td>"."PHP".$row['fees'];
 
-    echo"<td><a href='admin_apdc_fees_edit.php?id=".$row['id']."'><img src="\edit.png\"></a>&nbsp&nbsp&nbsp
-             <a href='admin_apdc_fees_delete.php?id=".$row['id']."'><img src="\trash.png\"></a>";
+    echo"<td><a href='admin_apdc_fees_edit.php?id=".$row['id']."'><img src=\"edit.png\"></a>&nbsp&nbsp&nbsp
+             <a href='admin_apdc_fees_delete.php?id=".$row['id']."'><img src=\"trash.png\"></a>";
   }
 
 }else{
