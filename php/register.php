@@ -30,12 +30,15 @@
                     echo "<script>alert('User Registration Completed. Please check your email for a link to verify your email address.')</script>";
                     header('location: register.php?emailsent=1'); // Registration Success & Email Confirmation Sent <Your account has been successfully registered. We sent an email confirmation to your registered email address.>
                 } else {
+                    echo "<script>alert('Oops. Something went wrong.')</script>";
                     header('location: register.php?err=305'); // Internal Error <Oops. Something went wrong.>
                 }
             }else{
+                echo "<script>alert('This email is already taken.')</script>";
                 header('location: register.php?err=304'); // Account already registerd <This email is already taken.>
             }
         }else{
+            echo "<script>alert('Password doesn't matched. Check your spelling.')</script>";
             header('location: register.php?err=303'); // Password Doesnt Matched <Password doesn't matched. Check your spelling.>
         }
     }
@@ -43,6 +46,7 @@
     if(isset($_GET['confirmAccount'])){
         $sql1 = "UPDATE tbl_patients SET status = 1 WHERE id = '".$_GET['id']."';";
         if ($conn->query($sql1) === TRUE) {
+            echo "<script>alert('Your email is now confirmed. Please login to continue.')</script>";
             header('location: register.php?confirmed=1'); // Account Confirmed <Your email is now confirmed. Please login to continue.>
         }
     }

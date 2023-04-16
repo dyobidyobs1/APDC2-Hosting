@@ -20,15 +20,19 @@
                         $_SESSION['address'] = $row['address'];
                         $_SESSION['contact'] = $row['contact'];
                         $_SESSION['status'] = $row['status'];
+                        echo "<script>alert('Authentication Success')</script>";
                         header("location: index.php"); // Authentication Success
                     }else if($row['status'] == -1){
+                        echo "<script>alert('Your Account has been blocked. Contact support to reactivate your account.')</script>";
                         header('location: login.php?err=404'); // Blocked Account <Your Account has been blocked. Contact support to reactivate your account.>
                     }
                 }else{
+                    echo "<script>alert('Incorrect Email or Password.')</script>";
                     header('location: login.php?err=403'); // Incorrect Password <Incorrect Email or Password.>
                 }
             }
         }else{
+            echo "<script>alert('Incorrect Email or Password.')</script>";
             header('location: login.php?err=403'); // Email not exist <Incorrect Email or Password.>
         }
     }
