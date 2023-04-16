@@ -20,14 +20,14 @@
                     ->setTo([$_POST['email'], $_POST['email'] => $_POST['name']])
                     ->setBody('Hi <b>'.$_POST['name'].'</b>,
                     <p>Click the One-Time Link (OTL) below to verify your email address. <br>
-                    <p>https://apdc.herokuapp.com/register.php?id='.$id.'&confirmAccount=JasLLAksAAS1'.RAND(111,999).'0aAPosA@'.$id.'</p>
+                    <p>https://apdc.herokuapp.com/login.php?id='.$id.'&confirmAccount=JasLLAksAAS1'.RAND(111,999).'0aAPosA@'.$id.'</p>
                     <p>Do not share this link with anyone. We take account security very seriously at APDC.<br>
                     Customer Care will never ask you for your account password, credit card, or banking account number.</p>
                     <p>Kind regards,<br>
                     <b>Apigo-Pedracio Dental Clinic Staff</b></p>')
                     ;
                     $result = $mailer->send($message);
-                    
+                    echo "<script>alert('User Registration Completed. Please check your email for a link to verify your email address.')</script>";
                     header('location: register.php?emailsent=1'); // Registration Success & Email Confirmation Sent <Your account has been successfully registered. We sent an email confirmation to your registered email address.>
                 } else {
                     header('location: register.php?err=305'); // Internal Error <Oops. Something went wrong.>
